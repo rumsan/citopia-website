@@ -2,7 +2,7 @@ import React from "react";
 
 const GetStarted = ({ lightTheme }) => {
   return (
-    <section className="serv-block bg-gray section-padding">
+    <section className="serv-block section-padding">
       <div className="container">
         <div className="row">
           <div className="col-lg-5">
@@ -20,15 +20,14 @@ const GetStarted = ({ lightTheme }) => {
           <div className="col-lg-6 offset-lg-1 valign">
             <div className="content">
               <h6 className="stit mb-30">
-                <span className="left"></span> Custimize Application
+                <span className="left"></span> Get Started
               </h6>
-              <h2 className="mb-30">We Tackle Your Most Ambitious Goals</h2>
+              <h2 className="mb-30">Seamless Movement with Citopia</h2>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accus antium doloremque laudantium, totam rem aperiam, eaque
-                ipsa quae abillo inventore veritatis et quasi architecto beatae
-                vitae dicta ecabo. Nemo enim ipsam voluptatem quia voluptas
-                aspernatur{" "}
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+              </p>
+              <p>
+              Are you a service provider or user looking for an easier and safer way to travel?
               </p>
 
               <div className="butons mt-40">
@@ -102,6 +101,8 @@ const GetStarted = ({ lightTheme }) => {
       </div>
       <div className="circle-blur"></div>
       <div className="circle-blur two"></div>
+      <div className="line top right"></div>
+      <div className="line bottom left"></div>
     </section>
   );
 };

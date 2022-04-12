@@ -11,7 +11,7 @@ const HowItWorks = () => {
                 <span className="left"></span> Working Process
                 <span className="right"></span>
               </h6>
-              <h2>3 Step to For User</h2>
+              <h2>3 Step For User</h2>
             </div>
           </div>
         </div>
