@@ -44,6 +44,11 @@ const NavbarMobileApp = ({ lr, nr, theme }) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+              <Link href="/#">
+                <a className="nav-link">Home</a>
+              </Link>
+            </li>
             <li className="nav-item dropdown" onClick={handleDropdown}>
               <span
                 className="nav-link dropdown-toggle"
@@ -53,63 +58,54 @@ const NavbarMobileApp = ({ lr, nr, theme }) => {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Home
+                About Us
               </span>
               <div className="dropdown-menu">
-                <Link href="/homepage/home1-dark">
-                  <a className="dropdown-item">Main Home</a>
+                <Link href="/#">
+                  <a className="dropdown-item">About Citopia</a>
                 </Link>
-                <Link href="/homepage/home2-dark">
-                  <a className="dropdown-item">Creative Agency</a>
-                </Link>
-                <Link href="/homepage/home5-dark">
-                  <a className="dropdown-item">Digital Agency</a>
-                </Link>
-                <Link href="/homepage/home4-dark">
-                  <a className="dropdown-item">Business One Page</a>
-                </Link>
-                <Link href="/homepage/home3-dark">
-                  <a className="dropdown-item">Corporate Business</a>
-                </Link>
-                <Link href="/homepage/home6-dark">
-                  <a className="dropdown-item">Modern Agency</a>
-                </Link>
-                <Link href="/homepage/home7-dark">
-                  <a className="dropdown-item">Freelancer</a>
-                </Link>
-                <Link href="/homepage/home8-dark">
-                  <a className="dropdown-item">Architecture</a>
+                <Link href="/#">
+                  <a className="dropdown-item">Products</a>
                 </Link>
               </div>
             </li>
             <li className="nav-item">
               <Link href="/mobile-app/services-dark">
-                <a className="nav-link">Services</a>
+                <a className="nav-link">Partners</a>
               </Link>
+            </li>
+            <li className="nav-item dropdown" onClick={handleDropdown}>
+              <span
+                className="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Resources
+              </span>
+              <div className="dropdown-menu">
+                <Link href="/#">
+                  <a className="dropdown-item">Blogs</a>
+                </Link>
+                <Link href="/#">
+                  <a className="dropdown-item">Articles</a>
+                </Link>
+                <Link href="/#">
+                  <a className="dropdown-item">Media Mentions</a>
+                </Link>
+              </div>
             </li>
             <li className="nav-item">
               <Link href="/mobile-app/pricing-plan-dark">
-                <a className="nav-link">Pricing</a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/mobile-app/portfolio-dark">
-              <a className="nav-link" >
-                Portfolio
-              </a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/mobile-app/shop-dark">
-              <a className="nav-link">
-                Products
-              </a>
+                <a className="nav-link">Demo</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/contact/contact-dark">
               <a className="nav-link" >
-                Contact
+                Contact Us
               </a>
               </Link>
             </li>
