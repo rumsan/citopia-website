@@ -7,9 +7,9 @@ const PageBanner = () => {
         <div className="row">
           <div className="col-lg-6 valign">
             <div className="caption">
-              <h1 className="mb-20">
-              Blockchain  For smart cities and human mobility 
-              </h1>
+              <h2 className="mb-20">
+              Citopia for Smart City Sustainable Mobility  Privacy & Smart Mobility 
+              </h2>
               <p>
               Exploring blockchain solutions for smart cities and human mobility to improve quality of life
               </p>
