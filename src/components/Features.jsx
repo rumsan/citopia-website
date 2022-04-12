@@ -11,7 +11,7 @@ const Features = () => {
                 <span className="left"></span> Application Features
                 <span className="right"></span>
               </h6>
-              <h2>Amazing Features to Customize your Application Easy</h2>
+              <h2> Features to Customize your Application Easy</h2>
             </div>
           </div>
         </div>
