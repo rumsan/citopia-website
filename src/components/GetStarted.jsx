@@ -24,7 +24,7 @@ const GetStarted = ({ lightTheme }) => {
               </h6>
               <h2 className="mb-30">Seamless Movement with Citopia</h2>
               <p>
-              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+              Citopia, a decentralized platform and tokenized ecosystem where mobility stakeholders can securely meet, message, and transact.
               </p>
               <p>
               Are you a service provider or user looking for an easier and safer way to travel?
