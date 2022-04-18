@@ -34,7 +34,7 @@ jobs:
         run: yarn run export
       - shell: bash
         run: |
-          mv ./CNAME ./out
+          mv ./out
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
