@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Blogs = () => {
   return (
-    <section className="blog-grid section-padding position-re">
+    <section className="blog-grid section-padding position-re" id="blogs">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10">

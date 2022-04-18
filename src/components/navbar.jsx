@@ -86,13 +86,13 @@ const NavbarMobileApp = ({ lr, nr, theme }) => {
                 Resources
               </span>
               <div className="dropdown-menu">
-                <Link href="/#">
+                <Link href="#blogs">
                   <a className="dropdown-item">Blogs</a>
                 </Link>
                 <Link href="/#">
                   <a className="dropdown-item">Articles</a>
                 </Link>
-                <Link href="/#">
+                <Link href="#news">
                   <a className="dropdown-item">Media Mentions</a>
                 </Link>
               </div>

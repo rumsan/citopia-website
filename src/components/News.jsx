@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const News = () => {
   return (
-    <section className="blog-list section-padding sub-bg">
+    <section className="blog-list section-padding sub-bg" id="news">
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
