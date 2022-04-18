@@ -2,9 +2,9 @@ name: Citopia Build CI & CD
 
 on:
   push:
-    branches: [stage]
+    branches: [main]
   pull_request:
-    branches: [stage]
+    branches: [main]
 
 jobs:
   deploy:
