@@ -25,7 +25,7 @@ const MinimalArea2 = () => {
           </div>
           <div className="col-lg-6 valign">
             <div className="content">
-              <div className="s-head mb-80">
+              <div className="s-head mb-40">
                 <h6 className="stit mb-30">
                   <span className="left"></span>
                   Get Started

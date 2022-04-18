@@ -16,7 +16,7 @@ const Intro2 = ({ sliderRef }) => {
               Exploring blockchain solutions for smart cities and human mobility to improve quality of life
               </p>
               <div className="butons mt-40">
-                <a href="#0" className="butn-gr rounded buton">
+                <a href="#0" className="butn-gr rounded buton mr-4">
                   <span>Apple Store</span>
                   <i className="icon">
                     <svg
