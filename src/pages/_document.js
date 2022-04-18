@@ -13,8 +13,11 @@ class MyDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-					<meta name="keywords" content="HTML5 Template Vie onepage themeforest" />
-					<meta name="description" content="Vie - Onepage Multi-Purpose HTML5 Template" />
+					<meta name="keywords" content="Mobi, Citopia, maas" />
+					<meta
+						name="description"
+						content="Citopia for Smart City Sustainable Mobility Privacy and Smart Mobility"
+					/>
 					<meta name="author" content="" />
 					<link rel="shortcut icon" href="./img/favicon.ico" />
 					<link
