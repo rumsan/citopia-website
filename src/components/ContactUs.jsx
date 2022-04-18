@@ -14,7 +14,7 @@ const ContactForm = ({ noLine }) => {
   }
   const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
   return (
-    <section className="contact-sec pt-50 pb-50 position-re">
+    <section className="contact-sec pt-50 pb-50 position-re" id="contact-us">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10">
