@@ -18,53 +18,34 @@ const Footer2 = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-4 col-md-6">
                         <div className="item-clumn links md-mb50">
                             <h5 className="title">Navigation</h5>
                             <ul>
                                 <li>
                                     <span className="icon pe-7s-angle-right"></span>
-                                    <a href="#0">Our Products</a>
+                                    <a href="#0">Home</a>
                                 </li>
                                 <li>
                                     <span className="icon pe-7s-angle-right"></span>
-                                    <a href="#0">Blogs & Guides</a>
+                                    <a href="#0">About Us</a>
                                 </li>
                                 <li>
                                     <span className="icon pe-7s-angle-right"></span>
-                                    <a href="#0">Premium Support</a>
+                                    <a href="#0">Partners</a>
                                 </li>
                                 <li>
                                     <span className="icon pe-7s-angle-right"></span>
-                                    <a href="#0">Need a Career ?</a>
+                                    <a href="#0">Resources</a>
+                                </li>
+                                <li>
+                                    <span className="icon pe-7s-angle-right"></span>
+                                    <a href="#0">Demo</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-2 col-md-6">
-                        <div className="item-clumn links sm-mb50">
-                            <h5 className="title">Links</h5>
-                            <ul>
-                                <li>
-                                    <span className="icon pe-7s-angle-right"></span>
-                                    <a href="#0">Support</a>
-                                </li>
-                                <li>
-                                    <span className="icon pe-7s-angle-right"></span>
-                                    <a href="#0">Privacy</a>
-                                </li>
-                                <li>
-                                    <span className="icon pe-7s-angle-right"></span>
-                                    <a href="#0">Setting</a>
-                                </li>
-                                <li>
-                                    <span className="icon pe-7s-angle-right"></span>
-                                    <a href="0">My Account</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-4 col-md-6">
                         <div className="item-clumn links">
                             <h5 className="title mb-30">Contact</h5>
                             <div className="info">

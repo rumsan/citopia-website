@@ -7,11 +7,13 @@ const Blogs = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10">
-            <div className="sec-head text-center">
-              <h6 className="wow fadeIn" data-wow-delay=".5s">
-                RECENT ARTICLES
+          <div className="s-head text-center mb-80">
+              <h6 className="stit mb-30">
+                <span className="left"></span>
+                Recent Articles
+                <span className="right"></span>
               </h6>
-              <h3 className="wow color-font">From our blogs.</h3>
+              <h2> From Our Blogs</h2>
             </div>
           </div>
         </div>

@@ -8,7 +8,8 @@ const Features = () => {
           <div className="col-lg-7 col-md-10">
             <div className="s-head text-center mb-80">
               <h6 className="stit mb-30">
-                <span className="left"></span> Application Features
+                <span className="left"></span>
+                Application Features
                 <span className="right"></span>
               </h6>
               <h2> Features to Customize your Application Easy</h2>
@@ -20,10 +21,10 @@ const Features = () => {
             <div className="item mb-30">
               <div className="item-tit mb-15">
                 <div className="icon">
-                  <span className="pe-7s-vector"></span>
+                  <span className="pe-7s-network"></span>
                 </div>
                 <div className="text-tit">
-                  <h5>Modern Design</h5>
+                  <h5>Blockchain/ZK Proof</h5>
                 </div>
               </div>
 
@@ -37,10 +38,10 @@ const Features = () => {
             <div className="item mb-30">
               <div className="item-tit mb-15">
                 <div className="icon">
-                  <span className="pe-7s-rocket"></span>
+                  <span className="pe-7s-lock"></span>
                 </div>
                 <div className="text-tit">
-                  <h5>Fast Installation</h5>
+                  <h5>PII Preservation</h5>
                 </div>
               </div>
 
@@ -54,10 +55,10 @@ const Features = () => {
             <div className="item mb-30">
               <div className="item-tit mb-15">
                 <div className="icon">
-                  <span className="pe-7s-graph3"></span>
+                  <span className="pe-7s-safe"></span>
                 </div>
                 <div className="text-tit">
-                  <h5>Digital Analytics</h5>
+                  <h5>Privacy</h5>
                 </div>
               </div>
 
@@ -71,10 +72,10 @@ const Features = () => {
             <div className="item sm-mb50">
               <div className="item-tit mb-15">
                 <div className="icon">
-                  <span className="pe-7s-anchor"></span>
+                  <span className="pe-7s-server"></span>
                 </div>
                 <div className="text-tit">
-                  <h5>SEO Friendly</h5>
+                  <h5>Data Preservation</h5>
                 </div>
               </div>
 
@@ -91,7 +92,7 @@ const Features = () => {
                   <span className="pe-7s-phone"></span>
                 </div>
                 <div className="text-tit">
-                  <h5>Clean Coding</h5>
+                  <h5>Easy Onboarding</h5>
                 </div>
               </div>
 
@@ -105,10 +106,10 @@ const Features = () => {
             <div className="item">
               <div className="item-tit mb-15">
                 <div className="icon">
-                  <span className="pe-7s-lock"></span>
+                  <span className="pe-7s-copy-file"></span>
                 </div>
                 <div className="text-tit">
-                  <h5>Heigh Security</h5>
+                  <h5>Digital Twin</h5>
                 </div>
               </div>
 
