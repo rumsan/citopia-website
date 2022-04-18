@@ -48,12 +48,12 @@
 ---------------------------------------------------------------- */
 /* ====================== [ Start Typography  ] ====================== */
 
-@import "/css/bootstrap.min.css";
-@import "/css/animate.css";
-@import "/css/font-awesome.min.css";
-@import "/css/ionicons.min.css";
-@import "/css/pe-icon.min.css";
-@import "/css/font-awesome.min.css";
+@import "https://rumsan.github.io/citopia-website/css/bootstrap.min.css";
+@import "https://rumsan.github.io/citopia-website/css/animate.css";
+@import "https://rumsan.github.io/citopia-website/css/font-awesome.min.css";
+@import "https://rumsan.github.io/citopia-website/css/ionicons.min.css";
+@import "https://rumsan.github.io/citopia-website/css/pe-icon.min.css";
+@import "https://rumsan.github.io/citopia-website/css/font-awesome.min.css";
 
 * {
   margin: 0;
