@@ -14,17 +14,17 @@ const ContactForm = ({ noLine }) => {
   }
   const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
   return (
-    <section className="contact-sec section-padding position-re">
+    <section className="contact-sec pt-50 pb-50 position-re" id="contact-us">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10">
-            <div className="sec-head  text-center">
-              <h6 className="wow fadeIn" data-wow-delay=".5s">
-                Contact Us
-              </h6>
+            <div className="sec-head text-center">
               <h3 className="wow color-font">
-                Let’s Get in Touch And Make Magic Together.
+                Seamless Journey With Privacy.
               </h3>
+              <h6 className="wow fadeIn" data-wow-delay=".5s">
+                Contact us to learn more about how Citopia is changing the world of mobility.
+              </h6>
             </div>
           </div>
         </div>

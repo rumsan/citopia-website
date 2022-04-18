@@ -9,7 +9,11 @@ const News = () => {
         <div className="row">
           <div className="col-lg-4">
             <div className="head md-mb50">
-              <h6 className="back-color">Get The Latest News</h6>
+            <h6 className="stit mb-30">
+                <span className="left"></span>
+                Get The Latest News
+                <span className="right"></span>
+              </h6>
               <h3>What Our Trending News.</h3>
               <p>
                 We provide company and finance service for startups and company

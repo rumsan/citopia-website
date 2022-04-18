@@ -12,6 +12,7 @@ import Blogs from "../components/Blogs";
 import News from "../components/News";
 import OurStories from "../components/OurStories";
 import ContactForm from "../components/ContactUs";
+import Footer from "../components/Footer";
 
 
 const MobileAppDark = () => {
@@ -44,12 +45,13 @@ const MobileAppDark = () => {
         <PageBanner/>
         < GetStarted />
         < HowItWorks />
-        < Features />
         < UseCases />
+        < Features />
         < Blogs />
         < News />
         < OurStories />
         < ContactForm/>
+        < Footer/>
       </DarkTheme>
     </>
   );

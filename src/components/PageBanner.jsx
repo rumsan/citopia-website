@@ -1,15 +1,17 @@
-import React from "react";
+/* eslint-disable @next/next/no-img-element */
+import React from 'react'
+import Link from 'next/link'
 
-const PageBanner = () => {
+const Intro2 = ({ sliderRef }) => {
   return (
-    <header className="mobile-app valign">
+    <header ref={sliderRef} className="slider-st valign position-re">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 valign">
+        <div className="col-lg-6 valign">
             <div className="caption">
-              <h1 className="mb-20">
-              Blockchain  For smart cities and human mobility 
-              </h1>
+              <h2 className="mb-20">
+              Citopia for Smart City Sustainable Mobility  Privacy & Smart Mobility 
+              </h2>
               <p>
               Exploring blockchain solutions for smart cities and human mobility to improve quality of life
               </p>
@@ -41,15 +43,14 @@ const PageBanner = () => {
             </div>
           </div>
 
-          <div className="col-lg-5 offset-lg-1">
-            <div className="img">
-              <img src="/img/mobile-app/header-img.png" alt="" />
-            </div>
+          <div className="col-lg-6">
+              <img src="/img/mobithumbnail.jpeg" alt="" />
           </div>
         </div>
       </div>
+      <div className="line bottom left"></div>
     </header>
   );
 };
 
-export default PageBanner;
+export default Intro2
