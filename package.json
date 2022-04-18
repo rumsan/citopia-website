@@ -1,7 +1,6 @@
 {
 	"name": "vie-react",
 	"private": true,
-	"homepage": "https://rumsan.github.io/citopia-website",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
