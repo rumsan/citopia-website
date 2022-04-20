@@ -1,24 +1,30 @@
-/* eslint-disable @next/next/no-page-custom-font */
 import React from "react";
-import Head from "next/head";
-import DarkTheme from "../layouts/Dark";
 import Navbar from "../components/navbar";
-import PageBanner from "../components/PageBanner";
-import GetStarted from "../components/GetStarted";
-import Features from "../components/Features";
-import HowItWorks from "../components/HowItWorks";
-import UseCases from "../components/UseCases";
-import Blogs from "../components/Blogs";
-import News from "../components/News";
-import OurStories from "../components/OurStories";
-import ContactForm from "../components/ContactUs";
-import Footer from "../components/Footer";
+import IntroWithSlider from "../components/intro-with-slider";
+import AboutUs from "../components/about-us";
+import Services from "../components/services";
+import VideoWithTestimonials from "../components/video-with-testimonials";
+import Footer from "../components/footer";
+import LightTheme from "../layouts/Light";
+import Portfolio from "../components/portfolio";
 
-
-const MobileAppDark = () => {
+const Homepage4 = () => {
+  const fixedSlider = React.useRef(null);
+  const MainContent = React.useRef(null);
   const navbarRef = React.useRef(null);
+  const logoRef = React.useRef(null);
+
   React.useEffect(() => {
-    var navbar = navbarRef.current;
+    setInterval(() => {
+      if (fixedSlider.current) {
+        var slidHeight = fixedSlider.current.offsetHeight;
+      }
+      if (MainContent.current) {
+        MainContent.current.style.marginTop = slidHeight + "px";
+      }
+    }, 1000);
+    var navbar = navbarRef.current,
+      logo = logoRef.current;
     if (window.pageYOffset > 300) {
       navbar.classList.add("nav-scroll");
     } else {
@@ -31,30 +37,21 @@ const MobileAppDark = () => {
         navbar.classList.remove("nav-scroll");
       }
     });
-  }, [navbarRef]);
+  }, [fixedSlider, MainContent, navbarRef]);
+
   return (
-    <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-      <DarkTheme mobileappstyle>
-        <Navbar nr={navbarRef} />
-        <PageBanner/>
-        < GetStarted />
-        < HowItWorks />
-        < UseCases />
-        < Features />
-        < Blogs />
-        < News />
-        < OurStories />
-        < ContactForm/>
-        < Footer/>
-      </DarkTheme>
-    </>
+    <LightTheme>
+      <Navbar nr={navbarRef} lr={logoRef} />
+      <IntroWithSlider sliderRef={fixedSlider} />
+      <div ref={MainContent} className="main-content">
+        <AboutUs />
+        <Services lines />
+        <Portfolio grid={2} filterPosition="left" />
+        <VideoWithTestimonials />
+        <Footer hideBGCOLOR />
+      </div>
+    </LightTheme>
   );
 };
 
-export default MobileAppDark;
+export default Homepage4;

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Script from 'next/script';
 import Cursor from '../components/cursor';
 import ScrollToTop from '../components/scrollToTop';
-import LoadingScreen from '../components/Loading-Screen';
+import LoadingScreen from '../components/loadingScreen';
 import '../styles/main.scss';
 
 function MyApp({ Component, pageProps }) {
