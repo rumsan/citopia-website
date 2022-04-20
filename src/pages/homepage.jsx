@@ -4,7 +4,7 @@ import IntroWithSlider from "../components/intro-with-slider";
 import AboutUs from "../components/about-us";
 import Services from "../components/services";
 import VideoWithTestimonials from "../components/video-with-testimonials";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import LightTheme from "../layouts/Light";
 import Portfolio from "../components/portfolio";
 
