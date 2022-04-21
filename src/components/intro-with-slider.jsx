@@ -92,7 +92,7 @@ const IntroWithSlider = ({ sliderRef }) => {
                           {slide?.content && <p>{slide.content}</p>}
                           <Link href="/about/about-dark">
                             <a className="butn bord curve mt-30">
-                              <span>Look More</span>
+                              <span>Learn More</span>
                             </a>
                           </Link>
                         </div>
