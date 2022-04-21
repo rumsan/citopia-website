@@ -4,7 +4,7 @@ import IntroWithSlider from "../components/intro-with-slider";
 import AboutUs from "../components/about-us";
 import Services from "../components/services";
 import Video from "../components/video";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import LightTheme from "../layouts/Light";
 
 const Homepage4 = () => {
