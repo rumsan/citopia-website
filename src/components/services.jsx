@@ -1,77 +1,82 @@
 import React from "react";
-import featuresData from "../data/sections/features.json";
+import Link from "next/link";
+import cardMouseEffect from "../common/cardMouseEffect";
 
-const Services = ({ style, lines }) => {
+const Services3 = () => {
+  React.useEffect(() => {
+    cardMouseEffect(document.querySelectorAll(".feat .items"));
+  }, []);
   return (
-    <section
-      className={`services bords section-padding ${
-        style === "4item" ? "lficon" : lines ? "" : "pt-0"
-      }`}
-    >
+    <section className="feat sub-bg section-padding">
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="row">
           <div className="col-lg-8 col-md-10">
-            <div className="sec-head  text-center">
+            <div className="sec-head">
               <h6 className="wow fadeIn" data-wow-delay=".5s">
-                Best Features
+                Best Services
               </h6>
               <h3 className="wow color-font">
-                We are a new digital product development agency
+                We help to create strategies, design &amp; development.
               </h3>
             </div>
           </div>
         </div>
         <div className="row">
-          {style === "4item"
-            ? featuresData.map((feature) => (
-                <div
-                  key={feature.id}
-                  className="col-lg-6 wow fadeInLeft"
-                  data-wow-delay={`${
-                    feature.id == 1
-                      ? ".5"
-                      : feature.id === 2
-                      ? ".7"
-                      : feature.id === 3
-                      ? ".9"
-                      : "1.1"
-                  }s`}
-                >
-                  <div className="item-box">
-                    <div>
-                      <span className={`icon ${feature.icon}`}></span>
-                    </div>
-                    <div className="cont">
-                      <h6>{feature.title}</h6>
-                      <p>{feature.content}</p>
-                    </div>
-                  </div>
-                </div>
-              ))
-            : // max item 3 in Home page
-              featuresData.slice(0, 3).map((feature) => (
-                <div
-                  key={feature.id}
-                  className="col-lg-4 wow fadeInLeft"
-                  data-wow-delay=".5s"
-                >
-                  <div className="item-box md-mb50">
-                    <span className={`icon ${feature.icon}`}></span>
-                    <h6>{feature.title}</h6>
-                    <p>{feature.content}</p>
-                  </div>
-                </div>
-              ))}
+          <div className="col-lg-4 col-md-6 items active md-mb30">
+            <div className="item wow fadeIn" data-wow-delay=".3s">
+              <span className="icon">
+                <i className="ion-ios-bolt-outline"></i>
+              </span>
+              <h5>Creative Always</h5>
+              <p>
+                Implementation and rollout of new network infrastructure,
+                including consolidation.
+              </p>
+              <Link href="/about/about-dark">
+                <a className="more-stroke">
+                  <span></span>
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 items sm-mb30">
+            <div className="item wow fadeIn" data-wow-delay=".3s">
+              <span className="icon">
+                <i className="ion-cube"></i>
+              </span>
+              <h5>Real-time Editing</h5>
+              <p>
+                Implementation and rollout of new network infrastructure,
+                including consolidation.
+              </p>
+              <Link href="/about/about-dark">
+                <a className="more-stroke">
+                  <span></span>
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 items">
+            <div className="item wow fadeIn" data-wow-delay=".3s">
+              <span className="icon">
+                <i className="ion-ios-color-wand"></i>
+              </span>
+              <h5>Art Concept</h5>
+              <p>
+                Implementation and rollout of new network infrastructure,
+                including consolidation.
+              </p>
+              <Link href="/about/about-dark">
+                <a className="more-stroke">
+                  <span></span>
+                </a>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
-      {lines ? (
-        <>
-          <div className="line top left"></div>
-          <div className="line bottom right"></div>
-        </>
-      ) : null}
     </section>
   );
 };
 
-export default Services;
+export default Services3;

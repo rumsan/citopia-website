@@ -1,87 +1,36 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Split from "../components/split";
-import AboutUs2Date from "../data/sections/about-us2.json";
+import Link from "next/link";
+import AboutUs1Date from "../data/sections/about-us1.json";
 
-const AboutUs2 = () => {
+const AboutUs = () => {
   return (
-    <div className="about section-padding">
+    <section className="about-us section-padding">
       <div className="container">
         <div className="row">
-          <div className="col-lg-5">
-            <div className="img-mons sm-mb30">
-              <div className="row">
-                <div className="col-md-5 cmd-padding valign">
-                  <div className="img1 wow imago" data-wow-delay=".5s">
-                    <img src={AboutUs2Date.image1} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-7 cmd-padding">
-                  <div className="img2 wow imago" data-wow-delay=".3s">
-                    <img src={AboutUs2Date.image2} alt="" />
-                  </div>
-                  <div className="img3 wow imago" data-wow-delay=".8s">
-                    <img src={AboutUs2Date.image3} alt="" />
-                  </div>
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-md-6">
-                        
-                      </div>
-                      <div className="col-md-6"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className="col-lg-5 valign md-mb50">
+            <div className="mb-50">
+              <h6 className="fw-100 text-u ls10 mb-10">
+                {AboutUs1Date.smallTitle}
+              </h6>
+              <h3 className="fw-600 text-u ls1 mb-30 color-font">
+                {AboutUs1Date.title}
+              </h3>
+              <p>{AboutUs1Date.content}</p>
+              <Link href="/about/about-dark">
+                <a className="butn bord curve mt-30">
+                  <span>Read More</span>
+                </a>
+              </Link>
             </div>
           </div>
-          <div className="col-lg-6 offset-lg-1 valign">
-            <div className="content">
-              <div className="sub-title">
-                <h6>{AboutUs2Date.smallTitle}</h6>
-              </div>
-              <Split>
-                <h3
-                  className="words chars splitting main-title wow"
-                  data-splitting
-                >
-                  {AboutUs2Date.title.first} <br /> {AboutUs2Date.title.second}
-                </h3>
-              </Split>
-              <Split>
-                <p className="words chars splitting wow txt" data-splitting>
-                  {AboutUs2Date.content}
-                </p>
-              </Split>
-              <div className="ftbox mt-30">
-                <ul>
-                  {AboutUs2Date.features.map((feature) => (
-                    <li
-                      key={feature.id}
-                      className={`wow fadeIn ${feature.id == 2 ? "space" : ""}`}
-                      data-wow-delay={feature.wowDelay}
-                    >
-                      <span
-                        className={`icon color-font pe-7s-${feature.icon}`}
-                      ></span>
-                      <h6>
-                        {feature.name.first} <br /> {feature.name.second}
-                      </h6>
-                      <div className="dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+          <div className="col-lg-7 img">
+            <img src={AboutUs1Date.image} alt="" />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default AboutUs2;
+export default AboutUs;

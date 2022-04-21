@@ -1,112 +1,77 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Link from "next/link";
-import appData from "../data/app.json";
 
-const Footer = ({ hideBGCOLOR }) => {
+const Footer2 = () => {
   return (
-    <footer className={`${!hideBGCOLOR ? "sub-bg" : ""}`}>
+    <footer className="app-footer" data-overlay-dark="0">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4">
-            <div className="item md-mb50">
-              <div className="title">
-                <h5>Contact Us</h5>
-              </div>
+          <div className="col-lg-4 col-md-6">
+            <div className="item-clumn our md-mb50">
+              <a href="#0" className="logo-brand mb-50">
+                <img src=" ./img/logo-gr.png" alt="" />
+              </a>
+              <p>
+                Sed ut perspiciatis undmnis iste natus error sit voluptatem
+                accusantium dolore udantiuy totam rem aperiam.
+              </p>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <div className="item-clumn links md-mb50">
+              <h5 className="title">Resources</h5>
               <ul>
                 <li>
-                  <span className="icon pe-7s-map-marker"></span>
-                  <div className="cont">
-                    <h6>Officeal Address</h6>
-                    <p>504 White St . Dawsonville, GA 30534 , New York</p>
-                  </div>
+                  <span className="icon pe-7s-angle-right"></span>
+                  <a href="#0">Our Products</a>
                 </li>
                 <li>
-                  <span className="icon pe-7s-mail"></span>
-                  <div className="cont">
-                    <h6>Email Us</h6>
-                    <p>support@gmail.com</p>
-                  </div>
+                  <span className="icon pe-7s-angle-right"></span>
+                  <a href="#0">Blogs & Guides</a>
                 </li>
                 <li>
-                  <span className="icon pe-7s-call"></span>
-                  <div className="cont">
-                    <h6>Call Us</h6>
-                    <p>+87986451666</p>
-                  </div>
+                  <span className="icon pe-7s-angle-right"></span>
+                  <a href="#0">Premium Support</a>
+                </li>
+                <li>
+                  <span className="icon pe-7s-angle-right"></span>
+                  <a href="#0">Need a Career ?</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="col-lg-4">
-            <div className="item md-mb50">
-              <div className="title">
-                <h5>Recent News</h5>
-              </div>
+          <div className="col-lg-2 col-md-6">
+            <div className="item-clumn links sm-mb50">
+              <h5 className="title">Links</h5>
               <ul>
                 <li>
-                  <div className="img">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <img src="/img/blog/1.jpg" alt="" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="sm-post">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <p>
-                          The Start-Up Ultimate Guide to Make Your WordPress
-                          Journal.
-                        </p>
-                      </a>
-                    </Link>
-                    <Link href="/blog/blog-dark">
-                      <a>
-                        <span className="date">14 sep 2022</span>
-                      </a>
-                    </Link>
-                  </div>
+                  <span className="icon pe-7s-angle-right"></span>
+                  <a href="#0">Support</a>
                 </li>
                 <li>
-                  <div className="img">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <img src="/img/blog/2.jpg" alt="" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="sm-post">
-                    <Link href="/blog-details/blog-details-dark">
-                      <a>
-                        <p>
-                          The Start-Up Ultimate Guide to Make Your WordPress
-                          Journal.
-                        </p>
-                      </a>
-                    </Link>
-                    <Link href="/blog/blog-dark">
-                      <a>
-                        <span className="date">14 sep 2022</span>
-                      </a>
-                    </Link>
-                  </div>
+                  <span className="icon pe-7s-angle-right"></span>
+                  <a href="#0">Privacy</a>
                 </li>
                 <li>
-                  <div className="subscribe">
-                    <input type="text" placeholder="Type Your Email" />
-                    <span className="subs pe-7s-paper-plane"></span>
-                  </div>
+                  <span className="icon pe-7s-angle-right"></span>
+                  <a href="#0">Setting</a>
+                </li>
+                <li>
+                  <span className="icon pe-7s-angle-right"></span>
+                  <a href="0">My Account</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="col-lg-4">
-            <div className="item">
-              <div className="logo">
-                <img src={appData.lightLogo} alt="" />
+          <div className="col-lg-3 col-md-6">
+            <div className="item-clumn links">
+              <h5 className="title mb-30">Contact</h5>
+              <div className="info">
+                <span>Email Address</span>
+                <h6>
+                  <a href="#0">support@gmail.com</a>
+                </h6>
               </div>
-              <div className="social">
+              <div className="social mt-30">
                 <a href="#0">
                   <i className="fab fa-facebook-f"></i>
                 </a>
@@ -120,24 +85,26 @@ const Footer = ({ hideBGCOLOR }) => {
                   <i className="fab fa-youtube"></i>
                 </a>
               </div>
-              <div className="copy-right">
-                <p>
-                  © 2022, Vie Template. Made with passion by
-                  <Link
-                    href="https://themeforest.net/user/themescamp/portfolio"
-                    
-                  >
-                    <a target="_blank">ThemesCamp</a>
-                  </Link>
-                  .
-                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="sub-footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="text-center">
+                <p>© 2022 Vie. All Rights Reserved</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div className="circle-blur"></div>
+      <div className="circle-blur two"></div>
     </footer>
   );
 };
 
-export default Footer;
+export default Footer2;

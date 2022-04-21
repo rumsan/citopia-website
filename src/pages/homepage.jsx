@@ -3,10 +3,9 @@ import Navbar from "../components/navbar";
 import IntroWithSlider from "../components/intro-with-slider";
 import AboutUs from "../components/about-us";
 import Services from "../components/services";
-import VideoWithTestimonials from "../components/video-with-testimonials";
-import Footer from "../components/Footer";
+import Video from "../components/video";
+import Footer from "../components/footer";
 import LightTheme from "../layouts/Light";
-import Portfolio from "../components/portfolio";
 
 const Homepage4 = () => {
   const fixedSlider = React.useRef(null);
@@ -45,10 +44,9 @@ const Homepage4 = () => {
       <IntroWithSlider sliderRef={fixedSlider} />
       <div ref={MainContent} className="main-content">
         <AboutUs />
+        < Video />
         <Services lines />
-        <Portfolio grid={2} filterPosition="left" />
-        <VideoWithTestimonials />
-        <Footer hideBGCOLOR />
+        {/* <Footer hideBGCOLOR /> */}
       </div>
     </LightTheme>
   );
