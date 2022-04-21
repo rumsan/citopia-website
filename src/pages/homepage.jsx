@@ -46,7 +46,7 @@ const Homepage4 = () => {
         <AboutUs />
         < Video />
         <Services lines />
-        {/* <Footer hideBGCOLOR /> */}
+        <Footer hideBGCOLOR />
       </div>
     </LightTheme>
   );
